@@ -1,4 +1,4 @@
-# AI-Powered Library Seat Monitoring System
+Library Seat Monitoring System
 
 An intelligent computer vision system that automatically monitors library seat occupancy and student engagement using YOLOv8 and computer vision techniques.
 
