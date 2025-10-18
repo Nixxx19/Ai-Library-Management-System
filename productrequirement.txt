@@ -29,6 +29,7 @@ Key Features :
 🧠 Posture Analysis : Analyze upper body position and movement to identify focused vs slacking posture.
 🔔 Smart Reminders : Send visual/sound notifications if user remains inactive or distracted for a defined duration.
 📊 Dashboard / Logs : Store and display real-time analytics (seat utilization %, focus time, occupancy duration).
+📍 Heatmap of seat/chair utilization over time.
 
 Architecture / Pipeline : 
 
@@ -74,3 +75,10 @@ Performance Targets :
 💬 Accuracy (Occupancy)	≥ 90%
 💬 False Slack Alerts	≤ 10%
 💬 Processing Device: GPU or edge device (Jetson / PC)
+
+Risks & Challenges : 
+
+💬 Occlusion (bag covering chair or person leaning or person covering 2 tables with single chair).
+💬 Lighting variation or evening time duration. 
+💬 Privacy concerns → must avoid face recognition; focus on posture/occupancy only.
+
