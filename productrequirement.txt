@@ -15,10 +15,32 @@ Problem Statement :
 2. Staff cannot continuously track which seats are available or who’s distracted.
 3. This leads to wasted space and reduced study efficiency.
 
-Proposed Solution
+Proposed Solution : 
 1. An AI system using OpenCV and YOLOv8 will:
 2. Detect chairs and persons in real-time video streams.
 3. Associate each person with their chair to determine seat occupancy.
 4. Monitor posture and activity to detect slacking (e.g., head down, looking away, phone usage).
 5. Provide real-time visual overlays, logs, and optional reminder alerts.
+
+Key Features : 
+💬 Feature	Description
+🪑 Automatic Seat Detection	: Detect and map all chairs dynamically — no manual region labeling required.
+🧍‍♂️ Occupancy Detection : Identify if a chair is empty or occupied using bounding box overlap between chair and person detections.
+🧠 Posture Analysis : Analyze upper body position and movement to identify focused vs slacking posture.
+🔔 Smart Reminders : Send visual/sound notifications if user remains inactive or distracted for a defined duration.
+📊 Dashboard / Logs : Store and display real-time analytics (seat utilization %, focus time, occupancy duration).
+
+Architecture / Pipeline : 
+
+[Video Feed / Camera Input]
+            ↓
+[YOLOv8n Detects Chairs + Persons]
+            ↓
+[Assign Seat IDs + Check Person-Chair Overlap]
+            ↓
+[Determine Occupancy Status (Empty / Occupied)]
+            ↓
+[Posture Analysis + Slack Detection]
+           ↓
+[Output Overlay + Logs + Alerts / Dashboard]
 
