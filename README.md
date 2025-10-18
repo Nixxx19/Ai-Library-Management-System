@@ -1,36 +1,45 @@
-AI-Powered Library Seat Monitoring System
+# AI-Powered Library Seat Monitoring System
 
 An intelligent computer vision system that automatically monitors library seat occupancy and student engagement using YOLOv8 and computer vision techniques.
 
-FEATURES
+## Features
 
-- Automatic Seat Detection: Dynamically detects and maps all chairs
-- Occupancy Detection: Real-time tracking of empty/occupied seats
-- Posture Analysis: Detects focused vs distracted behavior
-- Smart Reminders: Gentle alerts for inactivity
-- Analytics Dashboard: Real-time utilization metrics and heatmaps
-- Data Logging: Comprehensive analytics and reporting
-- Performance Monitoring: Real-time FPS and accuracy tracking
+- 🪑 **Automatic Seat Detection**: Dynamically detects and maps all chairs
+- 🧍‍♂️ **Occupancy Detection**: Real-time tracking of empty/occupied seats
+- 🧠 **Posture Analysis**: Detects focused vs distracted behavior
+- 🔔 **Smart Reminders**: Gentle alerts for inactivity
+- 📊 **Analytics Dashboard**: Real-time utilization metrics and heatmaps
+- 📈 **Data Logging**: Comprehensive analytics and reporting
+- 🎯 **Performance Monitoring**: Real-time FPS and accuracy tracking
 
-QUICK START
+## Quick Start
 
-1. Create and activate virtual environment with Python 3.9:
+1. **Create and activate virtual environment with Python 3.9:**
+   ```bash
    python3.9 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-2. Install dependencies:
+2. **Install dependencies:**
+   ```bash
    pip install -r requirements.txt
+   ```
 
-3. Test the system:
+3. **Test the system:**
+   ```bash
    python test_system.py
+   ```
 
-4. Run the monitoring system:
+4. **Run the monitoring system:**
+   ```bash
    python main.py
+   ```
 
-INSTALLATION
+## Installation
 
-Manual Installation:
+### Manual Installation
 
+```bash
 # Create virtual environment with Python 3.9
 python3.9 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -43,8 +52,9 @@ python -c "from ultralytics import YOLO; YOLO('yolov8n.pt')"
 
 # Create directories
 mkdir -p logs exports screenshots heatmaps
+```
 
-SYSTEM REQUIREMENTS
+### System Requirements
 
 - Python 3.9 (recommended for MediaPipe compatibility)
 - GPU recommended for optimal performance
@@ -53,12 +63,13 @@ SYSTEM REQUIREMENTS
 - OpenCV compatible camera
 - Virtual environment support
 
-Note: Python 3.9 is recommended as MediaPipe has compatibility issues with Python 3.13.
+**Note**: Python 3.9 is recommended as MediaPipe has compatibility issues with Python 3.13.
 
-USAGE
+## Usage
 
-Basic Usage:
+### Basic Usage
 
+```bash
 # Run with default settings
 python main.py
 
@@ -73,9 +84,11 @@ python main.py --no-alerts
 
 # Run without data logging
 python main.py --no-logging
+```
 
-Advanced Usage:
+### Advanced Usage
 
+```bash
 # Custom confidence threshold
 python main.py --confidence 0.7
 
@@ -84,18 +97,20 @@ python main.py --iou 0.4
 
 # Use custom YOLO model
 python main.py --model path/to/model.pt
+```
 
-Keyboard Controls:
+### Keyboard Controls
 
-- q or ESC: Quit the system
-- s: Save screenshot
-- h: Save heatmap
-- e: Export data to CSV
+- `q` or `ESC`: Quit the system
+- `s`: Save screenshot
+- `h`: Save heatmap
+- `e`: Export data to CSV
 
-CONFIGURATION
+## Configuration
 
-The system can be configured through config.py or by creating a config.json file:
+The system can be configured through `config.py` or by creating a `config.json` file:
 
+```json
 {
   "detection": {
     "confidence_threshold": 0.5,
@@ -110,8 +125,9 @@ The system can be configured through config.py or by creating a config.json file
     "alert_cooldown": 60.0
   }
 }
+```
 
-PERFORMANCE TARGETS
+## Performance Targets
 
 - Detection FPS: ≥ 15 FPS
 - Occupancy Accuracy: ≥ 90%
@@ -119,12 +135,15 @@ PERFORMANCE TARGETS
 - False Slack Alerts: ≤ 10%
 - Processing Time: ≤ 200ms per frame
 
-ARCHITECTURE
+## Architecture
 
+```
 [Camera Input] → [YOLO Detection] → [Seat Association] → [Posture Analysis] → [Alert System] → [Visualization] → [Data Logging]
+```
 
-FILE STRUCTURE
+## File Structure
 
+```
 library productivity/
 ├── main.py                 # Main application
 ├── detection.py           # YOLO detection system
@@ -142,32 +161,36 @@ library productivity/
 ├── exports/             # Data exports
 ├── screenshots/         # Screenshots
 ├── heatmaps/           # Heatmap images
-└── README.txt          # This file
+└── README.md            # This file
+```
 
-TROUBLESHOOTING
+## Troubleshooting
 
-Common Issues:
+### Common Issues
 
-1. Camera not detected: Check camera permissions and try different camera indices
-2. Low FPS: Reduce frame resolution or disable dashboard
-3. Detection errors: Adjust confidence threshold
-4. Audio alerts not working: Check pygame installation
-5. Import errors: Make sure virtual environment is activated
-6. MediaPipe issues: The system uses alternative posture analysis methods
-7. Permission errors: Run with appropriate camera permissions
+1. **Camera not detected**: Check camera permissions and try different camera indices
+2. **Low FPS**: Reduce frame resolution or disable dashboard
+3. **Detection errors**: Adjust confidence threshold
+4. **Audio alerts not working**: Check pygame installation
+5. **Import errors**: Make sure virtual environment is activated
+6. **MediaPipe issues**: The system uses alternative posture analysis methods
+7. **Permission errors**: Run with appropriate camera permissions
 
-Testing:
+### Testing
 
 Run the test suite to verify system functionality:
 
+```bash
 # Make sure virtual environment is activated
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Run tests
 python test_system.py
+```
 
-Virtual Environment Management:
+### Virtual Environment Management
 
+```bash
 # Activate virtual environment
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
@@ -176,16 +199,17 @@ deactivate
 
 # Remove virtual environment (if needed)
 rm -rf venv
+```
 
-Logs and Data:
+### Logs and Data
 
-- Logs are stored in the logs/ directory
-- Database: library_monitoring.db
-- Exports: exports/ directory
-- Screenshots: screenshots/ directory
-- Heatmaps: heatmaps/ directory
+- Logs are stored in the `logs/` directory
+- Database: `library_monitoring.db`
+- Exports: `exports/` directory
+- Screenshots: `screenshots/` directory
+- Heatmaps: `heatmaps/` directory
 
-PRIVACY AND ETHICS
+## Privacy and Ethics
 
 - No face recognition or personal identification
 - Focuses only on posture and occupancy
