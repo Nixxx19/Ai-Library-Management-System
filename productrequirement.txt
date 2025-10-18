@@ -44,3 +44,26 @@ Architecture / Pipeline :
            ↓
 [Output Overlay + Logs + Alerts / Dashboard]
 
+Technical Implementation : 
+
+💬 Detection Module (YOLOv8n):
+1. Classes: chair, person.
+2. Outputs bounding boxes + confidence scores per frame.
+
+💬 Seat-Person Association:
+1. Overlap IoU-based assignment.
+2. If a person overlaps a chair → seat = occupied.
+3. If not → seat = empty.
+
+💬 Posture & Activity Tracking:
+1. Use Mediapipe Pose or lightweight posture classifier.
+2. Measure head/shoulder tilt, phone-hand movement, or inactivity over time.
+
+💬 Alert System:
+3. Trigger reminder (sound/notification) if slacking detected for >30 sec.
+4. Store alert timestamp in logs.
+
+💬 Visualization:
+1. Overlay bounding boxes (🟩 empty / 🟥 occupied / 🟨 distracted).
+2. Display seat count and occupancy percentage.
+
