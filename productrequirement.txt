@@ -14,3 +14,11 @@ Problem Statement :
 1. Manual monitoring of seat occupancy and student engagement in libraries is inefficient.
 2. Staff cannot continuously track which seats are available or who’s distracted.
 3. This leads to wasted space and reduced study efficiency.
+
+Proposed Solution
+1. An AI system using OpenCV and YOLOv8 will:
+2. Detect chairs and persons in real-time video streams.
+3. Associate each person with their chair to determine seat occupancy.
+4. Monitor posture and activity to detect slacking (e.g., head down, looking away, phone usage).
+5. Provide real-time visual overlays, logs, and optional reminder alerts.
+
