@@ -67,3 +67,10 @@ Technical Implementation :
 1. Overlay bounding boxes (🟩 empty / 🟥 occupied / 🟨 distracted).
 2. Display seat count and occupancy percentage.
 
+Performance Targets : 
+
+💬 Max Persons per Camera: 40–50 (depends on resolution)
+💬 Detection FPS	≥ 15 FPS
+💬 Accuracy (Occupancy)	≥ 90%
+💬 False Slack Alerts	≤ 10%
+💬 Processing Device: GPU or edge device (Jetson / PC)
