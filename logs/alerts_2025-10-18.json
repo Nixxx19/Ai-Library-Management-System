@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": 1760811163.141108,
+    "person_id": 1,
+    "seat_id": 1,
+    "message": "Test alert",
+    "severity": 2,
+    "type": "visual"
+  }
+]
