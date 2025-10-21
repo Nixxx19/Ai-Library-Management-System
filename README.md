@@ -121,7 +121,7 @@ python main.py --model path/to/model.pt
 | `h` | Save heatmap |
 | `e` | Export data to CSV |
 
-## Configuration
+## ⚙️ Configuration
 
 The system can be configured through `config.py` or by creating a `config.json` file:
 
@@ -142,13 +142,15 @@ The system can be configured through `config.py` or by creating a `config.json` 
 }
 ```
 
-## Performance Targets
+## 📊 Performance Targets
 
-- Detection FPS: ≥ 15 FPS
-- Occupancy Accuracy: ≥ 90%
-- Max Persons per Camera: 40-50
-- False Slack Alerts: ≤ 10%
-- Processing Time: ≤ 200ms per frame
+| Metric | Target | Description |
+|--------|--------|-------------|
+| **Detection FPS** | ≥ 15 FPS | Real-time processing capability |
+| **Occupancy Accuracy** | ≥ 90% | Reliable seat occupancy detection |
+| **Max Persons per Camera** | 40-50 | Scalability for large spaces |
+| **False Slack Alerts** | ≤ 10% | Minimize false positive alerts |
+| **Processing Time** | ≤ 200ms per frame | Efficient real-time processing |
 
 ## Architecture
 
