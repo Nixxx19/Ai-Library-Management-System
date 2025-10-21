@@ -152,48 +152,56 @@ The system can be configured through `config.py` or by creating a `config.json` 
 | **False Slack Alerts** | ≤ 10% | Minimize false positive alerts |
 | **Processing Time** | ≤ 200ms per frame | Efficient real-time processing |
 
-## Architecture
+## 🏗️ Architecture
 
-```
-[Camera Input] → [YOLO Detection] → [Seat Association] → [Posture Analysis] → [Alert System] → [Visualization] → [Data Logging]
+```mermaid
+graph LR
+    A[📹 Camera Input] --> B[🔍 YOLO Detection]
+    B --> C[🪑 Seat Association]
+    C --> D[🧠 Posture Analysis]
+    D --> E[🔔 Alert System]
+    E --> F[📊 Visualization]
+    F --> G[📈 Data Logging]
 ```
 
-## File Structure
+## 📁 File Structure
 
 ```
 library productivity/
-├── main.py                 # Main application
-├── detection.py           # YOLO detection system
-├── posture_analysis.py    # Posture analysis system
-├── alert_system.py       # Alert and notification system
-├── visualization.py       # Real-time visualization
-├── data_logging.py       # Data logging and analytics
-├── config.py             # Configuration management
-├── test_system.py        # System testing
-├── setup.py              # Setup script
-├── requirements.txt      # Dependencies
-├── yolov8n.pt           # YOLO model weights
-├── venv/                # Virtual environment
-├── logs/                # Log files
-├── exports/             # Data exports
-├── screenshots/         # Screenshots
-├── heatmaps/           # Heatmap images
-└── README.md            # This file
+├── 📄 main.py                 # Main application entry point
+├── 🔍 detection.py           # YOLO detection system
+├── 🧠 posture_analysis.py    # Posture analysis system
+├── 🔔 alert_system.py       # Alert and notification system
+├── 📊 visualization.py       # Real-time visualization
+├── 📈 data_logging.py       # Data logging and analytics
+├── ⚙️ config.py             # Configuration management
+├── 🧪 test_system.py        # System testing
+├── 🛠️ setup.py              # Setup script
+├── 📋 requirements.txt      # Dependencies
+├── 🤖 yolov8n.pt           # YOLO model weights
+├── 📁 venv/                # Virtual environment
+├── 📁 logs/                # Log files
+├── 📁 exports/             # Data exports
+├── 📁 screenshots/         # Screenshots
+├── 📁 heatmaps/           # Heatmap images
+└── 📖 README.md            # This file
 ```
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
-### Common Issues
+### 🚨 Common Issues
 
-1. **Camera not detected**: Check camera permissions and try different camera indices
-2. **Low FPS**: Reduce frame resolution or disable dashboard
-3. **Detection errors**: Adjust confidence threshold
-4. **Audio alerts not working**: Check pygame installation
-5. **Import errors**: Make sure virtual environment is activated
-6. **MediaPipe issues**: The system uses alternative posture analysis methods
-7. **Permission errors**: Run with appropriate camera permissions
+| Issue | Solution |
+|-------|----------|
+| **Camera not detected** | Check camera permissions and try different camera indices |
+| **Low FPS** | Reduce frame resolution or disable dashboard |
+| **Detection errors** | Adjust confidence threshold |
+| **Audio alerts not working** | Check pygame installation |
+| **Import errors** | Make sure virtual environment is activated |
+| **MediaPipe issues** | The system uses alternative posture analysis methods |
+| **Permission errors** | Run with appropriate camera permissions |
 
-### Testing
+### 🧪 Testing
 
 Run the test suite to verify system functionality:
 
@@ -205,7 +213,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 python test_system.py
 ```
 
-### Virtual Environment Management
+### 🐍 Virtual Environment Management
 
 ```bash
 # Activate virtual environment
@@ -218,13 +226,15 @@ deactivate
 rm -rf venv
 ```
 
-### Logs and Data
+### 📁 Logs and Data
 
-- Logs are stored in the `logs/` directory
-- Database: `library_monitoring.db`
-- Exports: `exports/` directory
-- Screenshots: `screenshots/` directory
-- Heatmaps: `heatmaps/` directory
+| Directory | Purpose |
+|-----------|---------|
+| `logs/` | System log files |
+| `exports/` | Data exports and reports |
+| `screenshots/` | Captured screenshots |
+| `heatmaps/` | Generated heatmap images |
+| `library_monitoring.db` | SQLite database |
 
 ## Privacy and Ethics
 
