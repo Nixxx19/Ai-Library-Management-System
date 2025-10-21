@@ -47,9 +47,9 @@ python main.py
 
 > **💡 Pro Tip**: Run `python main.py --help` to see all available command-line options!
 
-## Installation
+## 📦 Installation
 
-### Manual Installation
+### 🔧 Manual Installation
 
 ```bash
 # Create virtual environment with Python 3.9
@@ -66,20 +66,21 @@ python -c "from ultralytics import YOLO; YOLO('yolov8n.pt')"
 mkdir -p logs exports screenshots heatmaps
 ```
 
-### System Requirements
+### 💻 System Requirements
 
-- Python 3.9 (recommended for MediaPipe compatibility)
-- GPU recommended for optimal performance
-- Camera or video feed input
-- 4GB+ RAM recommended
-- OpenCV compatible camera
-- Virtual environment support
+| Component | Requirement | Notes |
+|-----------|-------------|-------|
+| **Python** | 3.9+ | Recommended for MediaPipe compatibility |
+| **RAM** | 4GB+ | Minimum for smooth operation |
+| **GPU** | Optional | Recommended for optimal performance |
+| **Camera** | OpenCV compatible | USB webcam or IP camera |
+| **OS** | Windows/macOS/Linux | Cross-platform support |
 
-**Note**: Python 3.9 is recommended as MediaPipe has compatibility issues with Python 3.13.
+> **⚠️ Important**: Python 3.9 is recommended as MediaPipe has compatibility issues with Python 3.13.
 
-## Usage
+## 🎮 Usage
 
-### Basic Usage
+### 🏃‍♂️ Basic Usage
 
 ```bash
 # Run with default settings
@@ -98,7 +99,7 @@ python main.py --no-alerts
 python main.py --no-logging
 ```
 
-### Advanced Usage
+### ⚙️ Advanced Usage
 
 ```bash
 # Custom confidence threshold
@@ -111,12 +112,14 @@ python main.py --iou 0.4
 python main.py --model path/to/model.pt
 ```
 
-### Keyboard Controls
+### ⌨️ Keyboard Controls
 
-- `q` or `ESC`: Quit the system
-- `s`: Save screenshot
-- `h`: Save heatmap
-- `e`: Export data to CSV
+| Key | Action |
+|-----|--------|
+| `q` or `ESC` | Quit the system |
+| `s` | Save screenshot |
+| `h` | Save heatmap |
+| `e` | Export data to CSV |
 
 ## Configuration
 
