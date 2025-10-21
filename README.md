@@ -236,9 +236,21 @@ rm -rf venv
 | `heatmaps/` | Generated heatmap images |
 | `library_monitoring.db` | SQLite database |
 
-## Privacy and Ethics
+## 🔒 Privacy and Ethics
 
-- No face recognition or personal identification
-- Focuses only on posture and occupancy
-- All data is anonymized
-- Respects user privacy and study environment
+| Principle | Implementation |
+|-----------|----------------|
+| **No Face Recognition** | No personal identification or facial recognition |
+| **Posture Focus** | Only analyzes posture and occupancy patterns |
+| **Data Anonymization** | All collected data is anonymized |
+| **Privacy Respect** | Maintains respectful study environment |
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to submit issues and pull requests.
+
+[⬆ Back to Top](#-library-seat-monitoring-system)
+
+</div>
