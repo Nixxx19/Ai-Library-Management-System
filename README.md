@@ -19,28 +19,33 @@
 | 📈 **Data Logging** | Comprehensive analytics and detailed reporting |
 | 🎯 **Performance Monitoring** | Real-time FPS and accuracy tracking |
 
-## Quick Start
+## 🚀 Quick Start
 
-1. **Create and activate virtual environment with Python 3.9:**
-   ```bash
-   python3.9 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+Get up and running in minutes with these simple steps:
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 1️⃣ **Environment Setup**
+```bash
+# Create and activate virtual environment with Python 3.9
+python3.9 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-3. **Test the system:**
-   ```bash
-   python test_system.py
-   ```
+### 2️⃣ **Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-4. **Run the monitoring system:**
-   ```bash
-   python main.py
-   ```
+### 3️⃣ **Test the System**
+```bash
+python test_system.py
+```
+
+### 4️⃣ **Launch Monitoring**
+```bash
+python main.py
+```
+
+> **💡 Pro Tip**: Run `python main.py --help` to see all available command-line options!
 
 ## Installation
 
