@@ -1,16 +1,23 @@
-# Library Seat Monitoring System
+# 📚 Library Seat Monitoring System
 
-An intelligent computer vision system that automatically monitors library seat occupancy and student engagement using YOLOv8 and computer vision techniques.
+[![Python](https://img.shields.io/badge/Python-3.9-blue.svg)](https://python.org)
+[![YOLO](https://img.shields.io/badge/YOLO-v8-green.svg)](https://ultralytics.com)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.x-orange.svg)](https://opencv.org)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Features
+> An intelligent computer vision system that automatically monitors library seat occupancy and student engagement using YOLOv8 and advanced computer vision techniques.
 
-- 🪑 **Automatic Seat Detection**: Dynamically detects and maps all chairs
-- 🧍‍♂️ **Occupancy Detection**: Real-time tracking of empty/occupied seats
-- 🧠 **Posture Analysis**: Detects focused vs distracted behavior
-- 🔔 **Smart Reminders**: Gentle alerts for inactivity
-- 📊 **Analytics Dashboard**: Real-time utilization metrics and heatmaps
-- 📈 **Data Logging**: Comprehensive analytics and reporting
-- 🎯 **Performance Monitoring**: Real-time FPS and accuracy tracking
+## ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| 🪑 **Automatic Seat Detection** | Dynamically detects and maps all chairs in real-time |
+| 🧍‍♂️ **Occupancy Detection** | Real-time tracking of empty/occupied seats with high accuracy |
+| 🧠 **Posture Analysis** | Detects focused vs distracted behavior using advanced pose estimation |
+| 🔔 **Smart Reminders** | Gentle alerts for inactivity to encourage productivity |
+| 📊 **Analytics Dashboard** | Real-time utilization metrics and interactive heatmaps |
+| 📈 **Data Logging** | Comprehensive analytics and detailed reporting |
+| 🎯 **Performance Monitoring** | Real-time FPS and accuracy tracking |
 
 ## Quick Start
 
