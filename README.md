@@ -251,6 +251,4 @@ rm -rf venv
 
 We welcome contributions! Please feel free to submit issues and pull requests.
 
-[⬆ Back to Top](#-library-seat-monitoring-system)
-
 </div>
