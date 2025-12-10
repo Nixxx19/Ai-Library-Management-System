@@ -1,4 +1,4 @@
-# 📚 Library Seat Monitoring System
+# 📚 Ai Powered Library Seat Monitoring System
 
 [![Python](https://img.shields.io/badge/Python-3.9-blue.svg)](https://python.org)
 [![YOLO](https://img.shields.io/badge/YOLO-v8-green.svg)](https://ultralytics.com)
